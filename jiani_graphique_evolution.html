@@ -403,18 +403,18 @@
         const jiani_detente = [null, 28.5, 29.75];
         const jiani_lancer = [null, 19.18, 25.19];
         
-        // Barèmes FFT Filles 13 ans
-        const bareme_navette_20 = [10.70, 10.70, 10.70];
-        const bareme_navette_15 = [10.95, 10.95, 10.95];
-        const bareme_navette_10 = [11.40, 11.40, 11.40];
-        const bareme_navette_5 = [11.60, 11.60, 11.60];
-        const bareme_navette_1 = [12.30, 12.30, 12.30];
+        // Barèmes FFT Filles 12 ans (Jiani: née 3.5.2012, donc 12 ans pour ces 3 tests)
+        const bareme_navette_20 = [10.75, 10.75, 10.75];
+        const bareme_navette_15 = [11.00, 11.00, 11.00];
+        const bareme_navette_10 = [11.50, 11.50, 11.50];
+        const bareme_navette_5 = [12.00, 12.00, 12.00];
+        const bareme_navette_1 = [12.40, 12.40, 12.40];
         
-        const bareme_zigzag_20 = [5.40, 5.40, 5.40];
-        const bareme_zigzag_15 = [5.65, 5.65, 5.65];
+        const bareme_zigzag_20 = [5.50, 5.50, 5.50];
+        const bareme_zigzag_15 = [5.75, 5.75, 5.75];
         const bareme_zigzag_10 = [6.00, 6.00, 6.00];
-        const bareme_zigzag_5 = [6.15, 6.15, 6.15];
-        const bareme_zigzag_1 = [6.35, 6.35, 6.35];
+        const bareme_zigzag_5 = [6.25, 6.25, 6.25];
+        const bareme_zigzag_1 = [6.45, 6.45, 6.45];
         
         const bareme_detente_20 = [38, 38, 38];
         const bareme_detente_15 = [33, 33, 33];
@@ -422,11 +422,11 @@
         const bareme_detente_5 = [21, 21, 21];
         const bareme_detente_1 = [19, 19, 19];
         
-        const bareme_lancer_20 = [36, 36, 36];
-        const bareme_lancer_15 = [31, 31, 31];
-        const bareme_lancer_10 = [24, 24, 24];
-        const bareme_lancer_5 = [19, 19, 19];
-        const bareme_lancer_1 = [17, 17, 17];
+        const bareme_lancer_20 = [20, 20, 20];
+        const bareme_lancer_15 = [17, 17, 17];
+        const bareme_lancer_10 = [14, 14, 14];
+        const bareme_lancer_5 = [11, 11, 11];
+        const bareme_lancer_1 = [8, 8, 8];
         
         // NAVETTE - AXE INVERSÉ (pour que temps court = courbe montante)
         new Chart(document.getElementById('navettChart'), {
@@ -449,7 +449,7 @@
                         zIndex: 10
                     },
                     {
-                        label: '20 pts (10,70s)',
+                        label: '20 pts (10,75s)',
                         data: bareme_navette_20,
                         borderColor: '#4caf50',
                         borderWidth: 2.5,
@@ -459,7 +459,7 @@
                         tension: 0
                     },
                     {
-                        label: '15 pts (10,95s)',
+                        label: '15 pts (11,00s)',
                         data: bareme_navette_15,
                         borderColor: '#ff9800',
                         borderWidth: 2.5,
@@ -542,7 +542,7 @@
                         zIndex: 10
                     },
                     {
-                        label: '20 pts (5,40s)',
+                        label: '20 pts (5,50s)',
                         data: bareme_zigzag_20,
                         borderColor: '#4caf50',
                         borderWidth: 2.5,
@@ -552,7 +552,7 @@
                         tension: 0
                     },
                     {
-                        label: '15 pts (5,65s)',
+                        label: '15 pts (5,75s)',
                         data: bareme_zigzag_15,
                         borderColor: '#ff9800',
                         borderWidth: 2.5,
@@ -704,7 +704,7 @@
             }
         });
         
-        // LANCER (normal, pas inversé)
+        // Lancer 200g pour Filles 12-13 ans (Jiani 12 ans pour ces dates) (normal, pas inversé)
         new Chart(document.getElementById('lancerChart'), {
             type: 'line',
             data: {
@@ -725,7 +725,7 @@
                         zIndex: 10
                     },
                     {
-                        label: '20 pts (36pts)',
+                        label: '20 pts (20m) — Lancer 200g',
                         data: bareme_lancer_20,
                         borderColor: '#4caf50',
                         borderWidth: 2.5,
@@ -735,7 +735,7 @@
                         tension: 0
                     },
                     {
-                        label: '15 pts (31pts)',
+                        label: '15 pts (17m)',
                         data: bareme_lancer_15,
                         borderColor: '#ff9800',
                         borderWidth: 2.5,
@@ -745,7 +745,7 @@
                         tension: 0
                     },
                     {
-                        label: '10 pts (24pts)',
+                        label: '10 pts (14m)',
                         data: bareme_lancer_10,
                         borderColor: '#2196f3',
                         borderWidth: 2.5,
@@ -755,7 +755,7 @@
                         tension: 0
                     },
                     {
-                        label: '5 pts (19pts)',
+                        label: '5 pts (11m)',
                         data: bareme_lancer_5,
                         borderColor: '#9c27b0',
                         borderWidth: 2.5,
@@ -765,7 +765,7 @@
                         tension: 0
                     },
                     {
-                        label: '1 pt (17pts)',
+                        label: '1 pt (8m)',
                         data: bareme_lancer_1,
                         borderColor: '#f44336',
                         borderWidth: 2.5,
