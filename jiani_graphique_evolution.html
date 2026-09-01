@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #1a1a1a;
             margin: 0;
             padding: 20px;
             min-height: 100vh;
@@ -16,20 +16,20 @@
         .container {
             max-width: 1600px;
             margin: 0 auto;
-            background: white;
+            background: #242424;
             border-radius: 12px;
             padding: 30px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.7);
         }
         h1 {
-            color: #333;
+            color: #e0e0e0;
             text-align: center;
             margin-bottom: 10px;
             font-size: 2em;
         }
         .subtitle {
             text-align: center;
-            color: #666;
+            color: #b0b0b0;
             margin-bottom: 30px;
             font-size: 1.1em;
         }
@@ -40,14 +40,15 @@
             margin-bottom: 30px;
         }
         .chart-wrapper {
-            background: #f8f9fa;
+            background: #2a2a2a;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+            border: 1px solid #3a3a3a;
         }
         .chart-title {
             font-weight: 600;
-            color: #333;
+            color: #e0e0e0;
             margin-bottom: 15px;
             font-size: 1.1em;
         }
@@ -58,11 +59,11 @@
         }
         .chart-note {
             font-size: 0.85em;
-            color: #666;
+            color: #9b9b9b;
             font-style: italic;
             margin-top: 10px;
             padding-top: 10px;
-            border-top: 1px solid #ddd;
+            border-top: 1px solid #3a3a3a;
         }
         .legend-info {
             display: flex;
@@ -70,6 +71,7 @@
             margin-top: 10px;
             font-size: 0.85em;
             flex-wrap: wrap;
+            color: #b0b0b0;
         }
         .legend-item {
             display: flex;
@@ -91,15 +93,17 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            background: white;
+            background: #2a2a2a;
             border-radius: 8px;
             overflow: hidden;
+            border: 1px solid #3a3a3a;
         }
         .data-table th,
         .data-table td {
             padding: 12px;
             text-align: center;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #3a3a3a;
+            color: #e0e0e0;
         }
         .data-table th {
             background: #667eea;
@@ -107,7 +111,7 @@
             font-weight: 600;
         }
         .data-table tr:hover {
-            background: #f8f9fa;
+            background: #323232;
         }
         .data-table td:first-child {
             text-align: left;
@@ -125,6 +129,7 @@
             padding: 20px;
             border-radius: 8px;
             text-align: center;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
         }
         .stat-label {
             font-size: 0.9em;
@@ -142,15 +147,15 @@
         }
         .positive { color: #4caf50; }
         .info-box {
-            background: #e3f2fd;
-            border-left: 4px solid #2196f3;
+            background: #2a3a4a;
+            border-left: 4px solid #667eea;
             padding: 15px;
             margin: 20px 0;
             border-radius: 4px;
-            color: #1976d2;
+            color: #90c8f0;
         }
     </style>
-</head>
+
 <body>
     <div class="container">
         <h1>📊 Évolution des Tests Physiques - Jiani</h1>
@@ -321,7 +326,7 @@
         </div>
         
         <!-- Tableaux de données -->
-        <h2 style="margin-top: 40px; color: #333;">📋 Données brutes par date</h2>
+        <h2 style="margin-top: 40px; color: #e0e0e0;">📋 Données brutes par date</h2>
         <table class="data-table">
             <thead>
                 <tr>
@@ -337,7 +342,7 @@
             <tbody>
                 <tr>
                     <td>23/08/2024</td>
-                    <td>12.22 <span style="color:#999">(essai moy)</span></td>
+                    <td>12.22 <span style="color:#7a7a7a">(essai moy)</span></td>
                     <td>—</td>
                     <td>—</td>
                     <td>—</td>
@@ -346,8 +351,8 @@
                 </tr>
                 <tr style="background: #fff3e0;">
                     <td>25/01/2025</td>
-                    <td>12.13 <span style="color:#999">(essai moy)</span></td>
-                    <td>6.26 <span style="color:#999">(essai moy)</span></td>
+                    <td>12.13 <span style="color:#7a7a7a">(essai moy)</span></td>
+                    <td>6.26 <span style="color:#7a7a7a">(essai moy)</span></td>
                     <td>28.5</td>
                     <td>19.18</td>
                     <td>—</td>
@@ -355,8 +360,8 @@
                 </tr>
                 <tr>
                     <td>23/04/2025</td>
-                    <td>11.83 <span style="color:#999">(essai moy)</span></td>
-                    <td>5.85 <span style="color:#999">(essai moy)</span></td>
+                    <td>11.83 <span style="color:#7a7a7a">(essai moy)</span></td>
+                    <td>5.85 <span style="color:#7a7a7a">(essai moy)</span></td>
                     <td>29.75</td>
                     <td>25.19</td>
                     <td>34</td>
@@ -365,7 +370,7 @@
             </tbody>
         </table>
         
-        <h2 style="margin-top: 40px; color: #333;">📈 Évolution et analyse</h2>
+        <h2 style="margin-top: 40px; color: #e0e0e0;">📈 Évolution et analyse</h2>
         <div class="stats">
             <div class="stat-box">
                 <div class="stat-label">Navette</div>
@@ -499,11 +504,13 @@
                 responsive: true,
                 maintainAspectRatio: false,
                 plugins: {
-                    legend: { position: 'bottom', labels: { font: { size: 10 }, boxWidth: 12 } },
+                    legend: { position: 'bottom', labels: { font: { size: 11, color: '#e0e0e0' }, boxWidth: 12, color: '#e0e0e0' } },
                     filler: { propagate: true }
                 },
                 scales: {
                     y: {
+                        ticks: { color: '#b0b0b0' },
+                        grid: { color: '#3a3a3a', drawBorder: false }
                         beginAtZero: false,
                         min: 10.5,
                         max: 12.5,
@@ -590,10 +597,12 @@
                 responsive: true,
                 maintainAspectRatio: false,
                 plugins: {
-                    legend: { position: 'bottom', labels: { font: { size: 10 }, boxWidth: 12 } }
+                    legend: { position: 'bottom', labels: { font: { size: 11, color: '#e0e0e0' }, boxWidth: 12, color: '#e0e0e0' } }
                 },
                 scales: {
                     y: {
+                        ticks: { color: '#b0b0b0' },
+                        grid: { color: '#3a3a3a', drawBorder: false }
                         beginAtZero: false,
                         min: 5.2,
                         max: 6.5,
@@ -680,10 +689,12 @@
                 responsive: true,
                 maintainAspectRatio: false,
                 plugins: {
-                    legend: { position: 'bottom', labels: { font: { size: 10 }, boxWidth: 12 } }
+                    legend: { position: 'bottom', labels: { font: { size: 11, color: '#e0e0e0' }, boxWidth: 12, color: '#e0e0e0' } }
                 },
                 scales: {
                     y: {
+                        ticks: { color: '#b0b0b0' },
+                        grid: { color: '#3a3a3a', drawBorder: false }
                         beginAtZero: false,
                         min: 15,
                         max: 42,
@@ -769,10 +780,12 @@
                 responsive: true,
                 maintainAspectRatio: false,
                 plugins: {
-                    legend: { position: 'bottom', labels: { font: { size: 10 }, boxWidth: 12 } }
+                    legend: { position: 'bottom', labels: { font: { size: 11, color: '#e0e0e0' }, boxWidth: 12, color: '#e0e0e0' } }
                 },
                 scales: {
                     y: {
+                        ticks: { color: '#b0b0b0' },
+                        grid: { color: '#3a3a3a', drawBorder: false }
                         beginAtZero: false,
                         min: 15,
                         max: 40,
@@ -798,7 +811,9 @@
                 maintainAspectRatio: false,
                 plugins: { legend: { display: false } },
                 scales: {
-                    y: { beginAtZero: true, max: 50 }
+                    y: {
+                        ticks: { color: '#b0b0b0' },
+                        grid: { color: '#3a3a3a', drawBorder: false } beginAtZero: true, max: 50 }
                 }
             }
         });
@@ -819,7 +834,9 @@
                 maintainAspectRatio: false,
                 plugins: { legend: { display: false } },
                 scales: {
-                    y: { beginAtZero: true, max: 6 }
+                    y: {
+                        ticks: { color: '#b0b0b0' },
+                        grid: { color: '#3a3a3a', drawBorder: false } beginAtZero: true, max: 6 }
                 }
             }
         });
