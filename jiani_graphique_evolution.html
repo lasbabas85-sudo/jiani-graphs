@@ -422,11 +422,17 @@
         const bareme_detente_5 = [21, 21, 21];
         const bareme_detente_1 = [19, 19, 19];
         
-        const bareme_lancer_20 = [20, 20, 20];
-        const bareme_lancer_15 = [17, 17, 17];
-        const bareme_lancer_10 = [14, 14, 14];
-        const bareme_lancer_5 = [11, 11, 11];
-        const bareme_lancer_1 = [8, 8, 8];
+        // Barèmes LANCER FILLES 12 ANS (200g) - EN MÈTRES
+        const bareme_lancer_20 = [34, 34, 34];  // 20 points
+        const bareme_lancer_15 = [30, 30, 30];  // 15 points
+        const bareme_lancer_10 = [26, 26, 26];  // 10 points
+        const bareme_lancer_5 = [18, 18, 18];   // 5 points
+        const bareme_lancer_1 = [13, 13, 13];   // 1 point
+
+
+
+
+
         
         // NAVETTE - AXE INVERSÉ (pour que temps court = courbe montante)
         new Chart(document.getElementById('navettChart'), {
@@ -725,7 +731,7 @@
                         zIndex: 10
                     },
                     {
-                        label: '20 pts (20m) — Lancer 200g',
+                        label: '20 pts (34m) — Lancer 200g',
                         data: bareme_lancer_20,
                         borderColor: '#4caf50',
                         borderWidth: 2.5,
@@ -735,7 +741,7 @@
                         tension: 0
                     },
                     {
-                        label: '15 pts (17m)',
+                        label: '15 pts (30m)',
                         data: bareme_lancer_15,
                         borderColor: '#ff9800',
                         borderWidth: 2.5,
@@ -745,7 +751,7 @@
                         tension: 0
                     },
                     {
-                        label: '10 pts (14m)',
+                        label: '10 pts (26m)',
                         data: bareme_lancer_10,
                         borderColor: '#2196f3',
                         borderWidth: 2.5,
@@ -755,7 +761,7 @@
                         tension: 0
                     },
                     {
-                        label: '5 pts (11m)',
+                        label: '5 pts (18m)',
                         data: bareme_lancer_5,
                         borderColor: '#9c27b0',
                         borderWidth: 2.5,
@@ -765,7 +771,7 @@
                         tension: 0
                     },
                     {
-                        label: '1 pt (8m)',
+                        label: '1 pt (13m)',
                         data: bareme_lancer_1,
                         borderColor: '#f44336',
                         borderWidth: 2.5,
